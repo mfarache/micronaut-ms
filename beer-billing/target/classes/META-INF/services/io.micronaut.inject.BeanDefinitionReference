@@ -1,0 +1,4 @@
+micronaut.demo.beer.$NoCostTicket$InterceptedDefinitionClass
+micronaut.demo.beer.$$TicketControllerDefinition$InterceptedDefinitionClass
+micronaut.demo.beer.$TicketControllerDefinitionClass
+micronaut.demo.beer.client.$TicketControllerClient$InterceptedDefinitionClass
