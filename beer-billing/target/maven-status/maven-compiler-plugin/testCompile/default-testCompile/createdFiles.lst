@@ -1,4 +1,0 @@
-META-INF/services/io.micronaut.inject.BeanDefinitionReference
-micronaut/demo/beer/$TicketControllerTestDefinition.class
-micronaut/demo/beer/$TicketControllerTestDefinitionClass.class
-micronaut/demo/beer/TicketControllerTest.class
