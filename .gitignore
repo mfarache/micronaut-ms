@@ -4,3 +4,4 @@ target/
 .factorypath
 .project
 .dependency-reduced-pom.xml
+.DS_Store
