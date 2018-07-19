@@ -1,4 +1,4 @@
-package micronaut.demo.beer;
+package micronaut.demo.beer.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,12 +7,19 @@ public class Ticket {
 
 	private int deskId;
 	private  double cost = 0;
-	private List<BeerItem> items = new ArrayList<>();
+	private List<BeerItem> beerItems = new ArrayList<>();
 
 	public Ticket() {
 		cost = 0;
 	}
 
+	public List<BeerItem> getBeerItems() {
+		return beerItems;
+	}
+
+	public void setBeerItems(List<BeerItem> beerItems) {
+		this.beerItems = beerItems;
+	}
 
 	public int getDeskId() {
 		return deskId;
@@ -22,13 +29,9 @@ public class Ticket {
 		this.deskId = deskId;
 	}
 
-	public double getCost() {
-		items.stream().forEach( beer -> cost += beer.getCost());
-		return cost;
-	}
 
 	public void add(BeerItem beer) {
-		items.add(beer);
+		beerItems.add(beer);
 	}
 
 }

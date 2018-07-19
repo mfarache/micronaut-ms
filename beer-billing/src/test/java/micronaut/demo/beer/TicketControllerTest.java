@@ -6,6 +6,8 @@ import static org.junit.Assert.assertEquals;
 import io.micronaut.http.client.Client;
 import micronaut.demo.beer.client.TicketControllerClient;
 import java.util.concurrent.TimeUnit;
+
+import micronaut.demo.beer.model.BeerItem;
 import org.junit.After;
 import org.junit.Before;
 
@@ -17,7 +19,6 @@ import io.micronaut.runtime.server.EmbeddedServer;
 import io.reactivex.Single;
 
 import javax.inject.Inject;
-import java.util.Timer;
 
 public class TicketControllerTest {
 	
@@ -52,8 +53,8 @@ public class TicketControllerTest {
     
     @Test
     public void shouldGetTicketWithZeroWhenCustomerDidNotOrderBeers() {
-    		Single<Ticket> response = client.bill(USERNAME);
-            assertEquals(response.blockingGet().getCost(), 0,0);
+    		Single<Double> response = client.cost(USERNAME);
+            assertEquals(response.blockingGet(), 1.21,0);
     }
 
     @After

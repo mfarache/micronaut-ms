@@ -11,5 +11,5 @@
     <root level="debug">
         <appender-ref ref="STDOUT" />
     </root>
-    <!--<logger name="io.micronaut.context" level="TRACE"/>-->
+    <logger name="io.micronaut.tracing" level="TRACE"/>
 </configuration>
