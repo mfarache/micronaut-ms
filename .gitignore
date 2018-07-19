@@ -6,3 +6,7 @@ target/
 .dependency-reduced-pom.xml
 .DS_Store
 .idea
+
+beer-billing/dependency-reduced-pom\.xml
+
+beer-waiter/dependency-reduced-pom\.xml
