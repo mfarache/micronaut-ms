@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: billing-deployment
+  labels:
+    app: billing
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: billing
+  template:
+    metadata:
+      labels:
+        app: billing
+    spec:
+      containers:
+      - name: billing
+        image: dockermau/beer-billing:1.0
+        env:
+        - name: CONSUL_HOST
+          value: "consul-server"
+        - name: ZIPKIN_HOST
+          value: "zipkin-deployment"
+        ports:
+        - containerPort: 8083
