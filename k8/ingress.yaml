@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: waiter-ingress
+  annotations:
+    nginx.ingress.kubernetes.io/ssl-redirect: \"false\"
+spec:
+  rules:
+  - http:
+      paths:
+        - path: /waiter
+          backend:
+            serviceName: waiter-deployment
+            servicePort: 80
