@@ -10,3 +10,11 @@ target/
 beer-billing/dependency-reduced-pom\.xml
 
 beer-waiter/dependency-reduced-pom\.xml
+/.metadata/
+/.recommenders/
+
+beer-cost-function/\.settings/
+
+beer-cost-function/dependency-reduced-pom\.xml
+
+beer-waiter/\.settings/
