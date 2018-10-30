@@ -20,3 +20,7 @@ beer-cost-function/dependency-reduced-pom\.xml
 beer-waiter/\.settings/
 
 beer-billing/\.settings/
+
+beer-billing-client/\.settings/
+
+beer-billing-model/\.settings/
