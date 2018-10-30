@@ -3,22 +3,21 @@ package micronaut.demo.beer;
 
 import static org.junit.Assert.assertEquals;
 
-import io.micronaut.http.client.Client;
-import micronaut.demo.beer.client.TicketControllerClient;
 import java.util.concurrent.TimeUnit;
 
-import micronaut.demo.beer.model.BeerItem;
+import javax.inject.Inject;
+
 import org.junit.After;
 import org.junit.Before;
-
 import org.junit.Test;
 
 import io.micronaut.context.ApplicationContext;
 import io.micronaut.http.HttpResponse;
+import io.micronaut.http.client.annotation.Client;
 import io.micronaut.runtime.server.EmbeddedServer;
 import io.reactivex.Single;
-
-import javax.inject.Inject;
+import micronaut.demo.beer.client.TicketControllerClient;
+import micronaut.demo.beer.model.BeerItem;
 
 public class TicketControllerTest {
 	
