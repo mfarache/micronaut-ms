@@ -24,7 +24,6 @@ public class TicketControllerTest {
 	private final String USERNAME="mauricio";
 	private final String BEER_NAME="mahou";
 	
-
     private EmbeddedServer server;
 
     @Client(id="billing")

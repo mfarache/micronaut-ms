@@ -1,16 +1,16 @@
 package micronaut.demo.beer;
 
 
-import io.micronaut.context.ApplicationContext;
-import io.micronaut.runtime.server.EmbeddedServer;
-import io.reactivex.Single;
+import static org.junit.Assert.assertEquals;
 
-import micronaut.demo.beer.client.WaiterControllerClient;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertEquals;
+import io.micronaut.context.ApplicationContext;
+import io.micronaut.runtime.server.EmbeddedServer;
+import io.reactivex.Single;
+import micronaut.demo.beer.client.WaiterControllerClient;
 
 public class WaiterControllerTest {
 

@@ -18,3 +18,5 @@ beer-cost-function/\.settings/
 beer-cost-function/dependency-reduced-pom\.xml
 
 beer-waiter/\.settings/
+
+beer-billing/\.settings/

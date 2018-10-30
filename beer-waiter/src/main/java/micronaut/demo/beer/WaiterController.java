@@ -1,15 +1,14 @@
 package micronaut.demo.beer;
 
+import javax.validation.constraints.NotBlank;
+
 import io.micronaut.http.annotation.Controller;
 import io.micronaut.http.annotation.Get;
-import io.micronaut.tracing.annotation.NewSpan;
 import io.micronaut.validation.Validated;
 import io.reactivex.Single;
 import micronaut.demo.beer.client.TicketControllerClient;
 import micronaut.demo.beer.model.BeerItem;
 import micronaut.demo.beer.model.Ticket;
-
-import javax.validation.constraints.NotBlank;
 
 @Controller("/waiter")
 @Validated
