@@ -24,7 +24,7 @@ import javax.inject.Inject;
 import micronaut.demo.beer.model.BeerItem;
 import micronaut.demo.beer.model.Ticket;
 import micronaut.demo.beer.service.BillService;
-import micronaut.demo.beer.service.CostCalculator;
+import micronaut.demo.beer.service.TicketCostCalculator;
 import org.reactivestreams.Publisher;
 
 
@@ -33,12 +33,12 @@ import org.reactivestreams.Publisher;
 public class TicketController {
 
 	final EmbeddedServer embeddedServer;
-	final CostCalculator beerCostCalculator;
+	final TicketCostCalculator beerCostCalculator;
 	final BillService billService;
 
 	@Inject
 	public TicketController(EmbeddedServer embeddedServer,
-							CostCalculator beerCostCalculator,
+							TicketCostCalculator beerCostCalculator,
 							BillService billService) {
 		this.embeddedServer = embeddedServer;
 		this.beerCostCalculator = beerCostCalculator;
@@ -94,7 +94,7 @@ public class TicketController {
 
 	@ContinueSpan
 	private Ticket getNoCostTicket() {
-		BeerItem smallBeer = new BeerItem("Korona", BeerItem.Size.EMPTY);
+		BeerItem smallBeer = new BeerItem("FREE-BEER", BeerItem.Size.SMALL);
 		Ticket noCost = new Ticket();
 		noCost.add(smallBeer);
 		return noCost;

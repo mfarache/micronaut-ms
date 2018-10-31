@@ -11,6 +11,7 @@ import java.util.stream.Collectors;
 public class MapBillService implements BillService {
 
     Map<String, Ticket> billsPerCustomer = new HashMap<>();
+    
     public Ticket getBillForCostumer(String username) {
         return billsPerCustomer.get(username);
     }

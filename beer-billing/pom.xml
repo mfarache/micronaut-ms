@@ -34,6 +34,24 @@
 			<scope>compile</scope>
 		</dependency>
 		<dependency>
+			<groupId>micronaut.demo.beer</groupId>
+			<artifactId>cost-client</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>micronaut.demo.beer</groupId>
+			<artifactId>cost</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>micronaut.demo.beer</groupId>
+			<artifactId>cost-model</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
+		<dependency>
 			<groupId>io.micronaut</groupId>
 			<artifactId>micronaut-discovery-client</artifactId>
 		</dependency>
@@ -86,7 +104,11 @@
 			<artifactId>brave-opentracing</artifactId>
 			<scope>compile</scope>
 		</dependency>
-
+		<dependency>
+			<groupId>io.micronaut</groupId>
+			<artifactId>micronaut-function-web</artifactId>
+			<scope>compile</scope>
+		</dependency>
 		<dependency>
 			<groupId>io.micronaut</groupId>
 			<artifactId>micronaut-inject-java</artifactId>

@@ -22,7 +22,7 @@ import micronaut.demo.beer.model.BeerItem;
 public class TicketControllerTest {
 	
 	private final String USERNAME="mauricio";
-	private final String BEER_NAME="mahou";
+	private final String BEER_NAME="MAHOU";
 	
     private EmbeddedServer server;
 
@@ -52,7 +52,7 @@ public class TicketControllerTest {
     @Test
     public void shouldGetTicketWithZeroWhenCustomerDidNotOrderBeers() {
     		Single<Double> response = client.cost(USERNAME);
-            assertEquals(response.blockingGet(), 1.21,0);
+            assertEquals(0, response.blockingGet(),0);
     }
 
     @After
