@@ -24,3 +24,7 @@ beer-billing/\.settings/
 beer-billing-client/\.settings/
 
 beer-billing-model/\.settings/
+
+beer-cost-function-model/\.settings/
+
+beer-cost-function-client/\.settings/

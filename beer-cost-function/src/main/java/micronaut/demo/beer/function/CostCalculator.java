@@ -12,7 +12,9 @@ public class CostCalculator implements  Function<TicketCostRequest, TicketCostRe
     private static final double PINT_FACTOR=1.8;
 
     private static final Map<String, Double> beerCost = new HashMap<String, Double>();
+    
     static {
+    		beerCost.put("FREE-BEER", 0.0);
         beerCost.put("MAHOU", 1.5);
         beerCost.put("HEINEKEN", 2.0);
         beerCost.put("FRANCISKANER", 2.5);
@@ -25,7 +27,12 @@ public class CostCalculator implements  Function<TicketCostRequest, TicketCostRe
     }
 
     private double allBeersCost(TicketCostRequest ticketCostRequest) {
-        return ticketCostRequest
+    	
+      	System.out.println("XXXXX CostCalculator: request:" + ticketCostRequest);
+      	System.out.println("XXXXX CostCalculator: beerItems:" + ticketCostRequest.getBeerItems());
+      	
+        
+      	return ticketCostRequest
                 .getBeerItems()
                 .stream()
                 .map( beer ->  calculateBeerCost(beer))
