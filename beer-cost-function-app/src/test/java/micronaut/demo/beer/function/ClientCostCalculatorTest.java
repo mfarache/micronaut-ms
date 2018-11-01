@@ -12,7 +12,7 @@ import io.micronaut.runtime.server.EmbeddedServer;
 public class ClientCostCalculatorTest {
 	
 	@Test
-	public void testViesVatValidatorFunction() throws Exception {
+	public void testBeerCost() throws Exception {
         EmbeddedServer server = ApplicationContext.run(EmbeddedServer.class);
         ClientCostCalculator client = server.getApplicationContext().getBean(ClientCostCalculator.class);
         TicketBeerItem beer1 = new TicketBeerItem("MAHOU", "S");

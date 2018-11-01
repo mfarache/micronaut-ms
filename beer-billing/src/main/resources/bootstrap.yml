@@ -13,3 +13,9 @@ tracing:
       url: "http://${ZIPKIN_HOST:localhost}:${ZIPKIN_PORT:9411}"
       sampler:
         probability: 0.1
+aws:
+    lambda:
+        functions:
+            beer:
+                functionName: beer-cost
+        region: eu-west-3 # Paris Region
