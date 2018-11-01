@@ -16,20 +16,18 @@ This project contains the evolution of my blog series about Micronaut
 
 I recommend to read the first post to grab an idea of what we are buillding. 
 
-```
+NOTE: If you start reading the series you will find out that the project structure has changed.
 
-NOTE: If you start reading the series you will find out that the structure of the project has changed over the time. And the latest is not closer to how I started it.
+In case you are interested on seeing the evolution or want to play with something specific.
 
-I created a tag so you can check out the code corresponding to the publishing of each article, in case you are interested on seeing the evolution or want to play with something specific.
+The following tags match with each of the blog posts:
 
-```
-
-| Tables        | Tag          | CommitId  |
-| ------------- |:-------------:| -----:|
-| [Micronaut series - part I (Consul, Service Discovery & Registry)][1]    | blog-1 | d06e996aade5cc3f84de220da82a8c7f00001c26 |
-| [Micronaut series - part II ( Traceability & Server side events)][2]    | blog-2 | d06e996aade5cc3f84de220da82a8c7f00001c26 |
-| [Micronaut series - part III (Deployment using K8)][3]    | blog-3 | d06e996aade5cc3f84de220da82a8c7f00001c26 |
-| [Micronaut series - part IV (Serverless functions)][4]     | blog-4 | HEAD |
+| Tables        | Tag          | 
+| ------------- |:-------------:| 
+| [Micronaut series - part I (Consul, Service Discovery & Registry)][1]    | blog-1 | 
+| [Micronaut series - part II ( Traceability & Server side events)][2]    | blog-2 | 
+| [Micronaut series - part III (Deployment using K8)][3]    | blog-3 | 
+| [Micronaut series - part IV (Serverless functions)][4]     | blog-4 | 
 
 # Clone this project
 
